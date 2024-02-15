@@ -27,7 +27,7 @@ public class SnailManager : MonoBehaviour
     {
         if (snailCounterText != null)
         {
-            snailCounterText.text = "Snails: " + snailCount;
+            snailCounterText.text = snailCount + " out of 5";
         }
     }
 }
