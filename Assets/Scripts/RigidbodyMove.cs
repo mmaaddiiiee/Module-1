@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//lines 7-13, 20-28 made using ChatGPT. 
+//lines 7-13, 20-28 made using ChatGPT. reused from  attendance assignment 
 public class rbmove : MonoBehaviour
 {
     public float speed = 5f;  // Adjust the speed as needed

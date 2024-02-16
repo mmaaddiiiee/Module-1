@@ -1,16 +1,14 @@
 using UnityEngine;
 using System.Collections;
-//help from chatgpt lines 6-36
+//reused from attendance assigenments.Help from cahtgpt Coroutine
 public class InteractionScript : MonoBehaviour
 {
     public GameObject objectToDisable;
-
     private bool isCoroutineRunning = false;
 
-    // Update is called once per frame
     void Update()
     {
-        // Check if the player is near the object and presses 'f'
+        // Check if the player presses 'f'
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (!isCoroutineRunning)
@@ -27,14 +25,12 @@ public class InteractionScript : MonoBehaviour
         // Disable the object
         objectToDisable.SetActive(false);
 
-        // Wait for 10 seconds
-        yield return new WaitForSeconds(6f);
+        // Wait for 8 seconds
+        yield return new WaitForSeconds(8f);
 
-        // Enable the object after 10 seconds
+        // Enable the object after 8 seconds
         objectToDisable.SetActive(true);
 
         isCoroutineRunning = false;
     }
-
-
 }
